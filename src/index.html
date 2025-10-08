@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voting ― BLOCKELECT</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="icons/bootstrap-icons.css">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/alert.css">
+    <script src="/js/alert.js" defer></script>
+</head>
+
+<body>
+    <video autoplay muted loop>
+        <source src="assets/blockchain.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="content">
+        <a href="/"><img src="assets/logo.svg" alt="BLOCKELECT Logo"></a>
+        <small class="tagline">A Secure Voting System Based on the Ethereum Blockchain</small>
+
+        <main id="page">
+            <div id="accountBox">
+                <div id="account">
+                    <p id="acctLabel">
+                        <i class="bi bi-person-circle"></i>
+                        <b>Your Acct:</b>
+                    <p id="acctAddress"></p>
+                    </p>
+                    <p id="acctType"></p>
+                </div>
+            </div>
+
+            <div id="candidate" class="container">
+                <h1>Voting</h1>
+                <p class="info"><b>Election Dates | </b><span id="dates">Loading Dates...</span></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <i class="bi bi-person-raised-hand"></i>
+                                Candidate
+                            </th>
+                            <th>
+                                <i class="bi bi-flag-fill"></i>
+                                Political Party
+                            </th>
+                            <th>
+                                <i class="bi bi-graph-up-arrow"></i>
+                                Total Vote
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="boxCandidate"></tbody>
+                </table>
+                <br />
+                <p class="info" id="cantVote">You can't vote because no candidates have been declared.</p>
+                <div id="vote">
+                    <p class="info">Please select one of the candidates and click the “Cast Vote” button.</p>
+                    <button id="voteButton" class="btn btn-primary" onclick="App.vote()" disabled>Cast Vote</button>
+                    <div id="msg"></div>
+
+                    <div id="vote-box"></div>
+                </div>
+            </div>
+        </main>
+
+        <aside id="accessDenied">
+            <h1>Official Detected!</h1>
+            <p class="info">Redirecting to Commision Dashboard...</p>
+        </aside>
+
+        <aside id="noWallet">
+            <h1>Wallet Required!</h1>
+            <p class="info">To use this application, please install MetaMask cryptocurrency wallet extension for your
+                browser and reload this page to verify you're a citizen, and thus eligible to interract with our system.
+            </p>
+            <p id="wallets">
+                <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?utm"
+                    target="_blank"><i class="bi bi-browser-chrome"></i><span>Chrome</span></a>
+                <a href="https://microsoftedge.microsoft.com/addons/detail/metamask/ejbalbakoplchlghecdalmeeeajnimhm?hl=en-US&utm"
+                    target="_blank"><i class="bi bi-browser-edge"></i><span>Edge</span></a>
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/?utm" target="_blank"><i
+                        class="bi bi-browser-firefox"></i><span>Firefox</span></a>
+                <a href="https://metamask.io/en-GB/download" target="_blank"><i
+                        class="bi bi-window"></i><span>Others</span></a>
+            </p>
+        </aside>
+    </div>
+
+    <script src="../dist/app.bundle.js" type="module"></script>
+</body>
+
+</html>

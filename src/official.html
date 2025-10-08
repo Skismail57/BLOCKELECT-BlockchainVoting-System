@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Electoral Commission Dashboard ― BLOCKELECT</title>
+    <link rel="stylesheet" type="text/css" href="css/official.css">
+    <link rel="stylesheet" type="text/css" href="icons/bootstrap-icons.css">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/alert.css">
+    <script src="/js/alert.js" defer></script>
+</head>
+
+<body>
+    <video autoplay muted loop>
+        <source src="assets/blockchain.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="content">
+        <a href="/official.html"><img src="assets/logo.svg" alt="BLOCKELECT Logo"></a>
+        <small class="tagline">A Secure Voting System Based on the Ethereum Blockchain</small>
+
+        <main id="page">
+            <div id="accountBox">
+                <div id="account">
+                    <p id="acctLabel">
+                        <i class="bi bi-person-circle"></i>
+                        <b>Your Acct:</b>
+                    <p id="acctAddress"></p>
+                    </p>
+                    <p id="acctType"></p>
+                </div>
+            </div>
+
+            <div class="container">
+                <h1>Commission Dashboard</h1>
+                
+                <div id="electionStats" class="election-stats">
+                    <p>Loading election data...</p>
+                </div>
+                
+                <div id="currentCandidates" class="current-candidates">
+                    <p>Loading candidates...</p>
+                </div>
+
+                <section>
+                    <label>
+                        <h3>
+                            <i class="bi bi-person-fill-add"></i>
+                            Register Candidate
+                        </h3>
+                    </label>
+                    <input id="name" type="text" name="name" placeholder="Candidate's Name" autocomplete="off"
+                        style="margin-bottom: 18px;">
+                    <input id="party" type="text" name="party" placeholder="Candidate's Party">
+                    <input id="addCandidate" type="submit" name="submit" value="Register">
+                </section>
+
+                <section>
+                    <label>
+                        <h3>
+                            <i class="bi bi-calendar-plus-fill"></i>
+                            Set Election Dates
+                        </h3>
+                    </label>
+                    <label for="startDate">Start</label>
+                    <input id="startDate" type="date" name="" style="margin-bottom: 18px;">
+                    <label for="startEnd">End</label>
+                    <input id="endDate" type="date" name="">
+                    <input id="addDate" type="submit" name="submit" value="Set">
+                </section>
+
+                <section class="danger-section">
+                    <label>
+                        <h3>
+                            <i class="bi bi-exclamation-triangle-fill"></i>
+                            Danger Zone
+                        </h3>
+                    </label>
+                    <p style="color: #f2a4a4;">
+                        The action below will permanently delete all election data and cannot be undone. It will: delete
+                        all registered candidates, reset all vote counts to zero, restore voting rights to all users,
+                        and clear election dates.
+                    </p>
+                    <input id="resetElection" type="submit" name="submit" value="Cancel Election" class="btn-danger">
+                </section>
+            </div>
+        </main>
+
+        <aside id="accessDenied">
+            <h1>Voter Detected!</h1>
+            <p class="info">Redirecting to Voting page...</p>
+        </aside>
+
+        <aside id="noWallet">
+            <h1>Wallet Required!</h1>
+            <p class="info">To use this application, please install MetaMask cryptocurrency wallet extension for your browser and reload this page to verify you're a citizen, and thus eligible to interract with our system.</p>
+            <p id="wallets">
+                <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?utm" target="_blank"><i class="bi bi-browser-chrome"></i><span>Chrome</span></a>
+                <a href="https://microsoftedge.microsoft.com/addons/detail/metamask/ejbalbakoplchlghecdalmeeeajnimhm?hl=en-US&utm" target="_blank"><i class="bi bi-browser-edge"></i><span>Edge</span></a>
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/?utm" target="_blank"><i class="bi bi-browser-firefox"></i><span>Firefox</span></a>
+                <a href="https://metamask.io/en-GB/download" target="_blank"><i class="bi bi-window"></i><span>Others</span></a>
+            </p>
+        </aside>
+    </div>
+
+    <script src="../dist/app.bundle.js" type="module"></script>
+</body>
+
+</html>
