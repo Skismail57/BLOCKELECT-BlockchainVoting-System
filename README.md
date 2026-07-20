@@ -1,5 +1,7 @@
 # BLOCKELECT: Blockchain-Based Secure Voting System
-![BLOCKELECT - Blockchain Voting System](https://raw.githubusercontent.com/Skismail57/BLOCKELECT-BlockchainVoting-System/main/assets/banner.jpg)
+<p align="center">
+  <img src="voting-project.jpg" alt="voting-project" width="100%">
+</p>
 
 
 
