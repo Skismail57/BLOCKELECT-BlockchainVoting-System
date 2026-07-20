@@ -3,7 +3,33 @@
   <img src="voting-project.jpg" alt="voting-project" width="100%">
 </p>
 
+## 🛠️ Tech Stack
 
+![Ethereum](https://img.shields.io/badge/Ethereum-Blockchain-3C3C3D?logo=ethereum&logoColor=white)
+![Solidity](https://img.shields.io/badge/Solidity-Smart_Contracts-363636?logo=solidity&logoColor=white)
+![Web3.js](https://img.shields.io/badge/Web3.js-Integration-F16822?logo=web3dotjs&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-5.0-092E20?logo=django&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)
+
+
+![MetaMask](https://img.shields.io/badge/MetaMask-F6851B?logo=metamask&logoColor=white)
+![Ganache](https://img.shields.io/badge/Ganache-75492E?logo=ethereum&logoColor=white)
+![Truffle](https://img.shields.io/badge/Truffle-5E464D?logo=truffle&logoColor=white)
+
+## ✨ Features
+
+![Authentication](https://img.shields.io/badge/Secure-Voter_Authentication-success)
+![Smart Contracts](https://img.shields.io/badge/Smart-Contracts-blueviolet)
+![Immutable Votes](https://img.shields.io/badge/Immutable-Votes-blue)
+![Real-Time Results](https://img.shields.io/badge/Real--Time-Election_Results-success)
+![Cryptography](https://img.shields.io/badge/Cryptography-Enabled-orange)
+![Transparent](https://img.shields.io/badge/Transparent-Blockchain-informational)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 💡 Abstract
 
