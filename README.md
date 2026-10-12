@@ -1,7 +1,20 @@
 # BLOCKELECT: Blockchain-Based Secure Voting System
+
 <p align="center">
-  <img src="voting-project.jpg" alt="voting-project" width="100%">
+  <img src="voting-project.jpg" alt="BLOCKELECT Blockchain-Based Secure Voting System" width="100%">
 </p>
+
+## Original Project and Attribution
+
+**This project is based on BLOCKELECT: Blockchain-Based Secure Voting System**, originally developed by **Samuel A. Ughili and Joshua U. Ngwuoke** as a final-year project at the Department of Computer Science, Plateau State University, Bokkos.
+
+- **Original repository:** [BLOCKELECT — Blockchain-Based Secure Voting System](https://github.com/samughili/BLOCKELECT-Blockchain-Based-Secure-Voting-System)
+- **Published thesis:** [Research thesis (DOI)](https://doi.org/10.6084/m9.figshare.31249816)
+- **Original license:** MIT License
+
+The original authors retain their copyright to their contributions. This repository incorporates or derives from their original work. Any modifications and additional contributions by S K Ismail should be distinguished from the original authors' work.
+
+This project is shared in accordance with the MIT License, including its copyright and permission notice requirements. Please consult the original repository and thesis for the original implementation and research.
 
 ## 🛠️ Tech Stack
 
@@ -11,134 +24,136 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
-
-
-
 ![MetaMask](https://img.shields.io/badge/MetaMask-F6851B?logo=metamask&logoColor=white)
 ![Ganache](https://img.shields.io/badge/Ganache-75492E?logo=ethereum&logoColor=white)
 ![Truffle](https://img.shields.io/badge/Truffle-5E464D?logo=truffle&logoColor=white)
 
-## ✨ Features
+## ✨ Key Features
 
-![Authentication](https://img.shields.io/badge/Secure-Voter_Authentication-success)
-![Smart Contracts](https://img.shields.io/badge/Smart-Contracts-blueviolet)
-![Immutable Votes](https://img.shields.io/badge/Immutable-Votes-blue)
-![Real-Time Results](https://img.shields.io/badge/Real--Time-Election_Results-success)
-![Cryptography](https://img.shields.io/badge/Cryptography-Enabled-orange)
-![Transparent](https://img.shields.io/badge/Transparent-Blockchain-informational)
-![License](https://img.shields.io/badge/License-MIT-green)
+- **Voter authentication:** Web3 wallet-based voter address verification.
+- **Smart contracts:** Ethereum smart contracts for enforcing voting rules and recording votes.
+- **Blockchain transparency:** On-chain transactions that can be audited.
+- **Electoral commission dashboard:** Interface for election administration and monitoring.
+- **Voting interface:** Candidate information and voting interactions with blockchain feedback.
+- **Vote integrity:** Designed to prevent duplicate voting and unauthorized vote modification through contract-enforced rules.
+
+> Actual security properties depend on the smart contract implementation, deployment configuration and testing. Do not treat the feature descriptions as an independent security audit.
 
 ## 💡 Abstract
 
-*Traditional electoral systems exhibit critical vulnerabilities including vote manipulation, centralized points of failure, and compromised transparency that undermine democratic integrity. This research presents a decentralised blockchain-based secure voting system designed to address these challenges. The system employs Ethereum smart contracts written in Solidity to enforce immutable voting rules, Web3.js for blockchain integration, and MetaMask wallet authentication for secure voter verification. The architecture implements dual interfaces for voters and electoral commissions, with distributed consensus mechanisms ensuring real-time transaction validation. Smart contracts automatically enforce electoral rules while maintaining cryptographic immutability of voting transactions. The decentralised design eliminates single points of failure by distributing vote storage and validation across multiple nodes. System validation included unit, integration, system, and security testing. Results show prevention of vote tampering, elimination of double voting, and transparent, auditable election results. Implementation used Truffle framework, Ganache blockchain simulation, and Node.js back-end services following an Agile Prototype-based Iterative Development methodology. This work demonstrates blockchain’s feasibility in creating trustworthy electoral systems, offering a viable solution to electoral fraud and public confidence issues.*
+Traditional electoral systems can face vulnerabilities involving vote manipulation, centralized points of failure and insufficient transparency. BLOCKELECT explores a decentralized blockchain-based voting system intended to address these challenges. It uses Ethereum smart contracts written in Solidity, Web3.js for blockchain integration and MetaMask for wallet-based voter verification. The system includes interfaces for voters and electoral commission personnel, with blockchain transactions providing a transparent and auditable record of voting activity.
 
+The original project describes an implementation using the Truffle development framework, Ganache blockchain simulation and Node.js backend services. Its goal is to improve the integrity, transparency and auditability of electronic elections.
 
-## ⚙️ Features
+For the original research methodology, implementation details and findings, refer to the [published thesis](https://doi.org/10.6084/m9.figshare.31249816).
 
-- Uses Web3 wallet authentication for secure, decentralised user address verification.
-- Employs Ethereum smart contracts to immutably record and secure votes on-chain.
-- Removes centralised databases by using blockchain’s tamper-proof distributed ledger.
-- Offers a permissioned commission dashboard with role-based management controls and real-time election monitoring.
-- Provides a clean UI for seamless voting, transparent candidate information, and live blockchain feedback.
+## ⚙️ Functional Overview
+
+- Web3 wallet authentication for voter address verification.
+- Ethereum smart contracts for on-chain voting operations.
+- Blockchain-based recording of voting transactions.
+- Electoral commission interface for election administration.
+- Candidate information and voting interface.
+- Blockchain transaction feedback to help users follow voting operations.
 
 ## 🛠️ Requirements
 
-The following software versions are recommended for deploying this application (other versions might work).
+The following versions are documented for this project. Verify compatibility with the dependencies in `package.json` and the installed development environment before deployment.
 
-- Node.js `v22.14.0`
-- Web3.js `v1.10.0`
-- Express.js `v4.17.14`
-- Solidity `v0.8.19` (solc-js)
-- Truffle `v5.11.5` (core: 5.11.5)
-- Ganache GUI `v2.7.1` (or Ganache CLI `v7.9.1`)
-- MetaMask `v13.1.0`
-- ESBuild `v0.25.9` (or Browserify + Babelify or any ES6 bundler)
+- Node.js: `v22.14.0`
+- Web3.js: `v1.10.0`
+- Express.js: `v4.17.14`
+- Solidity: `v0.8.19` (solc-js)
+- Truffle: `v5.11.5`
+- Ganache GUI: `v2.7.1` or Ganache CLI `v7.9.1`
+- MetaMask: `v13.1.0`
+- ESBuild: `v0.25.9` or a compatible JavaScript bundling tool
+
+### Getting Started
+
+1. Install Node.js and npm.
+2. Clone or download this repository.
+3. Install the dependencies listed in `package.json`:
+
+   ```bash
+   npm install
+   ```
+
+4. Review `truffle-config.js` and configure the local blockchain network.
+5. Start Ganache or another compatible development network.
+6. Compile and deploy the smart contracts using the project's configured Truffle scripts.
+7. Configure the application to connect to the deployed contract and the intended blockchain network.
+8. Start the application using the scripts defined in `package.json`.
+
+**Note:** The exact commands for compiling, deploying and starting the application depend on the scripts and network configuration in your checked-out version. Review those files before running deployment commands.
 
 ## 📱 Screenshots
 
- ![No Wallet (Voting Page)](./views/wallet_required.png)
- ![Sign In (Voting Page)](./views/sign_in.png)
- ![Voter Detected (Electoral Commission Dashboard)](./views/voter_detected.png)
- ![Voting Page](./views/voting.png)
- ![Official Detected (Voting Page)](./views/official_detected.png)
- ![Electoral Commission Dashboard](./views/commission_dashboard.png)
+### Wallet Required
+![No Wallet - Voting Page](./views/wallet_required.png)
 
+### Sign In
+![Sign In - Voting Page](./views/sign_in.png)
 
+### Voter Detection
+![Voter Detected - Electoral Commission Dashboard](./views/voter_detected.png)
 
-## 📂 Structure
+### Voting Page
+![Voting Page](./views/voting.png)
 
-The project directory is organised as follows:
+### Official Detection
+![Official Detected - Voting Page](./views/official_detected.png)
 
-```
-BLOCKELECT (Prototype)              # Project root directory
-|
-├── build/                          # Contract build artifacts
+### Electoral Commission Dashboard
+![Electoral Commission Dashboard](./views/commission_dashboard.png)
+
+## 📂 Project Structure
+
+The following structure reflects the project layout documented for this repository. Some generated directories may be created only after installing dependencies or building the application.
+
+```text
+BLOCKELECT/
+├── build/
 │   └── contracts/
 │       └── VotingSys.json
-├── contracts/                      # Solidity smart contracts
+├── contracts/
 │   └── VotingSys.sol
-├── dist/                           # Bundled/compiled frontend files for deployment
+├── dist/
 │   └── app.bundle.js
-├── migrations/                     # Truffle migration scripts
+├── migrations/
 │   └── 1_deploy_contracts.js
-├── node_modules/                   # NPM dependencies
-├── src/                            # Application source files
-│   ├── assets/                     # Media assets
-│   │   ├── blockchain.mp4
-│   │   ├── favicon.svg
-│   │   └── logo.svg
-│   ├── css/                        # UI stylesheets
-│   │   ├── alert.css
-│   │   ├── index.css
-│   │   └── official.css
-│   ├── icons/                      # Bootstrap icon set
-│   │   ├── fonts/
-│   │   └── bootstrap-icons.css
-│   ├── js/                         # JavaScript logic files
-│   │   ├── alert.js
-│   │   └── app.js
-│   ├── sounds/                     # Sound effects
-│   │   ├── error.wav
-│   │   ├── info.wav
-│   │   ├── success.wav
-│   │   └── warning.wav
-│   ├── index.html                  # Voter-facing interface
-│   └── official.html               # Official (admin) interface
-├── views/                          # UI screenshots for documentation
+├── src/
+│   ├── assets/
+│   ├── css/
+│   ├── icons/
+│   ├── js/
+│   ├── sounds/
+│   ├── index.html
+│   └── official.html
+├── views/
 │   ├── commission_dashboard.png
 │   ├── official_detected.png
 │   ├── sign_in.png
 │   ├── voter_detected.png
 │   ├── voting.png
 │   └── wallet_required.png
-├── LICENSE                         # Project license file
-├── package-lock.json               # Locked versions of Node.js dependencies
-├── package.json                    # Project metadata & Node.js package configuration
-├── README.md                       # Project documentation
-├── server.js                       # Backend server (Node.js application entry-point)
-└── truffle-config.js               # Truffle configuration file
+├── LICENSE
+├── package-lock.json
+├── package.json
+├── README.md
+├── server.js
+└── truffle-config.js
 ```
 
+## 📄 License
 
-MIT License
+This project is distributed under the MIT License, subject to the terms and notices in the [`LICENSE`](./LICENSE) file.
 
-Copyright (c) 2025 Samuel A. Ughili & Joshua U. Ngwuoke
-Copyright (c) 2025 S K Ismail (modifications)
+The original copyright notice for Samuel A. Ughili and Joshua U. Ngwuoke must remain preserved. Any additional copyright notice should apply only to your own original modifications and must not imply ownership of the original authors' work.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## 🙏 Acknowledgments
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Credit and thanks to **Samuel A. Ughili and Joshua U. Ngwuoke** for their original BLOCKELECT project and research.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+- [Original BLOCKELECT repository](https://github.com/samughili/BLOCKELECT-Blockchain-Based-Secure-Voting-System)
+- [Published research thesis](https://doi.org/10.6084/m9.figshare.31249816)
