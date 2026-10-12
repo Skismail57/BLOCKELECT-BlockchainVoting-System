@@ -122,14 +122,3 @@ BLOCKELECT (Prototype)              # Project root directory
 └── truffle-config.js               # Truffle configuration file
 ```
 
-## ⚖️ License
-
-This project is licensed under the MIT License―you are free to use, modify, and distribute of it, with attribution, but without warranty. To see a full breakdown of this license, click [here](./LICENSE).
-
-**Attribution**
-
-All the sound effects included in this project are from Microsoft Windows, which are the property of Microsoft Corporation. These sounds are used for demonstration purposes only and remain subject to Microsoft’s copyright and licensing terms.
-
----
-
-Give this repository a ⭐ if you like it.
